@@ -21,20 +21,6 @@ root.title("gestion de stock")
 root.geometry("720x720")
 root.config(bg="yellow",)
 
-# créer un menu
-menubar = Menu(root)
-# créer un sous-menu
-filemenu = Menu(menubar, tearoff=0)
-filemenu.add_command(label="New" )
-filemenu.add_command(label="Open")
-filemenu.add_command(label="Save")
-
-menubar.add_cascade(label="File", menu=filemenu)
-menubar.add_command(label="Quit!", command=root.quit)
-
-#afficher le menu
-root.config(menu=menubar)
-
 
 #creer un gframe
 table = tkinter.Frame(root)
